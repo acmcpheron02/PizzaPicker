@@ -44,55 +44,55 @@ namespace PizzaPref
 			return result;
 		}
 
-		public static Person CreateUser()
-		{
-			Console.WriteLine("Please enter the following information:");
-			Console.WriteLine("Full name: ");
-			var name = Console.ReadLine();
-			Console.WriteLine("Email: ");
-			var email = Console.ReadLine();
+		// public static Person CreateUser()
+		// {
+		// 	Console.WriteLine("Please enter the following information:");
+		// 	Console.WriteLine("Full name: ");
+		// 	var name = Console.ReadLine();
+		// 	Console.WriteLine("Email: ");
+		// 	var email = Console.ReadLine();
 
-			ToppingList toppingList = new ToppingList();
-      List<ITopping> toppings = SurveyToppings(toppingList);
+		// 	ToppingList toppingList = new ToppingList();
+    //   List<ITopping> toppings = SurveyToppings(toppingList);
 
-			Person person = new Person(name, email, toppings);
-			return person;
-		}
+		// 	Person person = new Person(name, email, toppings);
+		// 	return person;
+		// }
 
-		public static void FindUser(List<Person> users)
-		{
-			Console.WriteLine("Please enter the email address of the user you would like to find.");
-			var email = Console.ReadLine();
-			var foundUser = users.Where(u => u.Email == email);
-			Console.WriteLine();
-			foreach (Person person in foundUser)
-			{
-				Console.WriteLine(person.FullName);
-				foreach (Topping topping in person.ToppingPrefs)
-				{
-					Console.WriteLine(string.Format("{0}: {1}", topping.Name, topping.LikeScale));
-				}
-			}
-		}
+		// public static void FindUser(List<Person> users)
+		// {
+		// 	Console.WriteLine("Please enter the email address of the user you would like to find.");
+		// 	var email = Console.ReadLine();
+		// 	var foundUser = users.Where(u => u.Email == email);
+		// 	Console.WriteLine();
+		// 	foreach (Person person in foundUser)
+		// 	{
+		// 		Console.WriteLine(person.FullName);
+		// 		foreach (Topping topping in person.ToppingPrefs)
+		// 		{
+		// 			Console.WriteLine(string.Format("{0}: {1}", topping.Name, topping.LikeScale));
+		// 		}
+		// 	}
+		// }
 
-		public static List<ITopping> SurveyToppings(ToppingList toppingList)
-		{
-			Console.WriteLine("Please rate the following toppings from 1 to 5, 1 being least liked and 5 being most liked. For any toppings you cannot eat, use 0.");
-			int likeness = 0;
-			List<ITopping> toppings = new List<ITopping>(toppingList.Toppings.Length);
-			for(int i = 0; i < toppingList.Toppings.Length; i++)
-			{
-				Console.WriteLine(toppingList.Toppings[i] + ": ");
-				likeness = Int32.Parse(Console.ReadLine());
-				Topping toAdd = new Topping(
-					toppingList.Toppings[i],
-					likeness,
-					true,
-					true
-				);
-				toppings.Add(toAdd);
-			}
-			return toppings;
-		} 
+		// public static List<ITopping> SurveyToppings(ToppingList toppingList)
+		// {
+		// 	Console.WriteLine("Please rate the following toppings from 1 to 5, 1 being least liked and 5 being most liked. For any toppings you cannot eat, use 0.");
+		// 	int likeness = 0;
+		// 	List<ITopping> toppings = new List<ITopping>(toppingList.Toppings.Length);
+		// 	for(int i = 0; i < toppingList.Toppings.Length; i++)
+		// 	{
+		// 		Console.WriteLine(toppingList.Toppings[i] + ": ");
+		// 		likeness = Int32.Parse(Console.ReadLine());
+		// 		Topping toAdd = new Topping(
+		// 			toppingList.Toppings[i],
+		// 			likeness,
+		// 			true,
+		// 			true
+		// 		);
+		// 		toppings.Add(toAdd);
+		// 	}
+		// 	return toppings;
+		 
   }
 }
