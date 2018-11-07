@@ -1,0 +1,38 @@
+﻿using System;
+
+namespace PizzaPref
+{
+  class Program
+  {
+    public static void Main()
+    {
+      ToppingList toppingList = new ToppingList();
+
+      IToppingPref[] toppingPrefs =
+      {
+        new Pepperoni(3),
+        new Sausage(3),
+        new Beef(3),
+        new RedOnion(3),
+        new Olive(3),
+        new Jalapeno(3)
+      };
+
+      Person person = new Person("Cody McPheron", "example@wow.com", toppingPrefs);
+
+      Console.WriteLine(person.FullName + person.ToppingPrefs[0].LikeScale);
+    }
+
+    public static int[] SurveyToppings(ToppingList toppingList)
+    {
+      int arrayLength = toppingList.Topping.Length;
+      int[] responses = new int[arrayLength];
+      for (int i = 0; i < toppingList.Topping.Length; i++)
+      {
+        Console.WriteLine("How would you rate " + toppingList.Topping[i] + "?");
+        responses[i] = Convert.ToInt32(Console.ReadLine());
+      }
+      return responses;
+    }
+  }
+}

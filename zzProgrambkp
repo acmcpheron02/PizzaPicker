@@ -1,0 +1,15 @@
+namespace PizzaPref
+{
+  class Program
+  {
+    public static void Main()
+    {
+      ToppingPref pref = new ToppingPref("pepperoni", 3);
+
+      Console.WriteLine("This person likes the following:");
+      Console.WriteLine(pref.Name);
+      Console.WriteLine(pref.LikeScale);
+      Console.WriteLine(pref.IsMeat);
+    }
+  }
+}

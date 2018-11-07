@@ -1,0 +1,7 @@
+namespace PizzaPref
+{
+	class Pizza
+	{
+		
+	}
+}

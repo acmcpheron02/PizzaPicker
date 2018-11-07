@@ -1,0 +1,11 @@
+/Users/acmcpheron/Documents/PizzaPrefs/obj/Debug/netcoreapp2.1/PizzaPrefs.csprojAssemblyReference.cache
+/Users/acmcpheron/Documents/PizzaPrefs/obj/Debug/netcoreapp2.1/PizzaPrefs.csproj.CoreCompileInputs.cache
+/Users/acmcpheron/Documents/PizzaPrefs/obj/Debug/netcoreapp2.1/PizzaPrefs.AssemblyInfoInputs.cache
+/Users/acmcpheron/Documents/PizzaPrefs/obj/Debug/netcoreapp2.1/PizzaPrefs.AssemblyInfo.cs
+/Users/acmcpheron/Documents/PizzaPrefs/bin/Debug/netcoreapp2.1/PizzaPrefs.deps.json
+/Users/acmcpheron/Documents/PizzaPrefs/bin/Debug/netcoreapp2.1/PizzaPrefs.runtimeconfig.json
+/Users/acmcpheron/Documents/PizzaPrefs/bin/Debug/netcoreapp2.1/PizzaPrefs.runtimeconfig.dev.json
+/Users/acmcpheron/Documents/PizzaPrefs/bin/Debug/netcoreapp2.1/PizzaPrefs.dll
+/Users/acmcpheron/Documents/PizzaPrefs/bin/Debug/netcoreapp2.1/PizzaPrefs.pdb
+/Users/acmcpheron/Documents/PizzaPrefs/obj/Debug/netcoreapp2.1/PizzaPrefs.dll
+/Users/acmcpheron/Documents/PizzaPrefs/obj/Debug/netcoreapp2.1/PizzaPrefs.pdb
