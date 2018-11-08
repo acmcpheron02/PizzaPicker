@@ -71,7 +71,7 @@ namespace PizzaPref
 		{
 			Console.WriteLine("Please enter the email address of the user you would like to find.");
 			var email = Console.ReadLine();
-			var foundUser = users.Where(u => u.Email == email);
+			var foundUser = Users.Where(u => u.Email == email);
 			Console.WriteLine();
 			foreach (Person person in foundUser)
 			{

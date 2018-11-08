@@ -11,6 +11,7 @@ namespace PizzaPref
     {
 			UserList userlist = new UserList();
 			Menu menu = new Menu(userlist);
+			menu.Display();
     }
 
 		// static public int DisplayMenu()
