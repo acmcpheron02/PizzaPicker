@@ -6,12 +6,7 @@ namespace PizzaPref
 {
 	class UserList
 	{
-		private List<Person> Users {get; set;}
-
-		public UserList()
-		{
-			Users = new List<Person>(8);
-		}
+		static private List<Person> Users {get; set;}
 
 		public void CreateUser()
 		{
@@ -52,7 +47,7 @@ namespace PizzaPref
 			} while(true);
 		}
 
-		public static List<ITopping> SurveyToppings(ToppingList toppingList)
+		private List<ITopping> SurveyToppings(ToppingList toppingList)
 		{
 			Console.WriteLine("Please rate the following toppings from 1 to 5, 1 being least liked and 5 being most liked. For any toppings you cannot eat, use 0.");
 			int likeness = 0;
@@ -71,8 +66,8 @@ namespace PizzaPref
 			}
 			return toppings;
 		}
-		
-		public static void FindUser(List<Person> users)
+
+		public void FindUser()
 		{
 			Console.WriteLine("Please enter the email address of the user you would like to find.");
 			var email = Console.ReadLine();
